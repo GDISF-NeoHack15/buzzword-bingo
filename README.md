@@ -36,7 +36,9 @@ The purpose of the game is to be fun, to help invite newer members to a communit
 
 #### How to Contribute
 1.clone repo
+
 2. write some 1337 code
+
 3. submit pull request
 
 
