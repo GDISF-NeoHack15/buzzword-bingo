@@ -3,7 +3,7 @@
 ####Team Members:
 Daniela: HTML, CSS, JavaScript, jQuery
 
-Zoe : Design, CSS
+Zoe : graphic design, CSS
 
 Lizzy: Bootstrap, responsiveness, marketing, technical copywriter
 
@@ -13,7 +13,7 @@ Jessica: Firebase
 
 Heidi: Angular, algorithms, product manager
 
-Dan: Team mentor and javaScript guru
+Dan: Team mentor and Javascript guru
 
 ####Project: Buzzword Bingo
 
@@ -42,8 +42,8 @@ The purpose of the game is to be fun, to help invite newer members to a communit
 #### How to Contribute
 1.clone repo
 
-2. write some 1337 code
+2.write some 1337 code
 
-3. submit pull request
+3.submit pull request
 
 
