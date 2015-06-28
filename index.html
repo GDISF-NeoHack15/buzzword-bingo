@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="buzz_css.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+ <script src='https://code.jquery.com/ui/1.11.4/jquery-ui.min.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Buzzword Bingo</title>
+</head>
+
+
+<body><section id="lab">
+<div id="sectionheader"> <img src="buzz_logo.png"> </div>
+    <!-- <table style= "width: 80%">
+       <tr>
+       <td > <div class='square' id="square-16">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d",>
+            </div>
+              </div>
+             </div>
+         </div>
+     </div> </td>
+
+       <td> <div class='square' id="square-1">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div> </td>
+
+
+
+       <td> <div class='square' id="square-2">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div>
+     </td>
+
+
+     <td> <div class='square' id="square-3">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div> </td>
+     </tr>
+
+
+    <tr>
+        <td>
+        <div class='square' id="square-4">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div>
+            </td>
+
+           <td> <div class='square' id="square-5">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div>
+     </td>
+
+          <td> <div class='square' id="square-6">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div>
+            </td>
+         <td>  <div class='square' id="square-7">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div> </td>
+     </tr>
+             <tr>
+                <td> <div class='square' id="square-8">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div> </td>
+
+    <td> <div class='square' id="square-9">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div> </td>
+
+    <td> <div class='square' id="square-10">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div> </td>
+
+        <td> <div class='square' id="square-11">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div> </td>
+     </tr>
+
+  <td> <div class='square' id="square-12">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div> </td>
+
+
+
+            <td><div class='square' id="square-13">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div> </td>
+
+       <td> <div class='square' id="square-14">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div> </td>
+
+     <td><div class='square' id="square-15">
+        <div class="hexagon hexagon2">
+            <div class="hexagon-in1">
+                <div class="hexagon-in2" style="background-color: #f4e26d"
+            </div>
+              </div>
+             </div>
+         </div>
+         </div>
+     </td>
+ </tr>
+ -->
+<button id="make-new-board">Play a new game</button>
+<div class='img-container'>
+
+ <table>
+<tr>
+<td id="square-0"></td>
+<td id="square-1"></td>
+<td id="square-2"></td>
+<td id="square-3"></td>
+</tr>
+<tr>
+<td id="square-4"></td>
+<td id="square-5"></td>
+<td id="square-6"></td>
+<td id="square-7"></td>
+</tr>
+<tr>
+<td id="square-8"></td>
+<td id="square-9"></td>
+<td id="square-10"></td>
+<td id="square-11"></td>
+</tr>
+<tr>
+<td id="square-12"></td>
+<td id="square-13"></td>
+<td id="square-14"></td>
+<td id="square-15"></td>
+</tr>
+</table>
+</div>
+
+</section>
+    <script src="bingo.js"></script>
+</body>
+</html>
