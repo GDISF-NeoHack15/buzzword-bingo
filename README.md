@@ -13,7 +13,12 @@ Jessica: Firebase
 
 Heidi: Angular, algorithms, product manager
 
+Dan: Team mentor and javaScript guru
+
 ####Project: Buzzword Bingo
+
+View app here : https://buzzword-bingo.firebaseapp.com/
+or  http://tinyurl.com/neohack-buzzword
 
 Every niche has their own sublanguage.  This language can often feel intimidating, exclusive, not to mention often overused.   While your are immersed in it's native environment, the optimal method to dealing with this discomfort is to determine a low stakes way to interact with this seemingly foreign language.  After all, you are now a member of this community too!
 
